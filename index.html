@@ -14,13 +14,18 @@ if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 </script>
 <h1 id="msgs">PS4 JAILBREAK PINAS FW V9.00</h1>
 
-<br>
+<br><br>
 <div id="jb-progress">
 <h1 id=msgs2 style="font-size: 30px;margin-top: 77px;margin-bottom: 412px;">Webkit exploit running... please, WAIT!!!</h1>
 </div>
+<br><br>
 <div id="main-section" style="display: none">
 <h1 style="font-size:20px;text-align:center;">GoldHen and Binloader</h1>
+
+<button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.4b14 for 9.00 FW'" onmouseout="msgs.innerHTML='PS4 JAILBREAK PINAS FW V9.00'" onclick=load_goldhen24b14()> GoldHEN v2.4b14 </button>
+
 <button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.3 for 9.00 FW'" onmouseout="msgs.innerHTML='PS4 JAILBREAK PINAS FW V9.00'" onclick=load_goldhen23()> GoldHEN v2.3 </button>
+
 <button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.4b13 for 9.00 FW'" onmouseout="msgs.innerHTML='PS4 JAILBREAK PINAS FW V9.00'" onclick=load_goldhen24b13()> GoldHEN v2.4b13 </button>
 <button class="btn" onmouseover="msgs.innerHTML='Send a Payload using port 9020'" onmouseout="msgs.innerHTML='PS4 JAILBREAK PINAS FW V9.00'" onclick=load_binloader()> Bin Loader </button>
 <br>
@@ -96,6 +101,8 @@ if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 <br>
 <button class="btn btn-web" onclick=load_menu() style="margin-bottom: 241px"> Return </button>
 </div>
+
+<div style="font-size:15px;color:gold;"><marquee behavior="scroll" direction="left" scrollamount="20">Special Thanks to SiSTR0, theflow0, Karo, ChendoChap, sleirsgoevy, Al-Azif, Echo Stretch, SpecterDev, Cyb1k, Arczi, Fugazi, Opoisso893, Golemnight, all the Testers and Devs behind the PS4JBSCENE.   </marquee>
 <br>
 </font><div style="text-align:left;position:fixed;left:10px;bottom:10px;width:100%;font-size:15px;color:#fff">ps4jbpinas team: <font color="#fff">facebook.com/federico.jardin.923 - facebook.com/moises.meneses.737 - facebook.com/dolph.regala - facebook.com/Guwapingz - facebook.com/ismut1008</font></div>
 <script>
@@ -341,6 +348,11 @@ setTimeout(loadScript("netcat.js")
 +loadScript('LinuxPro-4gb.js')
 +loadScript('jbc_loader.js')
 +loadScript('relocator.js'),1500);
+}
+function load_goldhen24b14(){
+LoadedMSG = "GoldHEN v2.4b14 Loaded ...";
+PLfile = "goldhen_v2.4b14.bin";
+load_poc();
 }
 
 function load_goldhen24b13(){
